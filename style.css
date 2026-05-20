@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    background: #000;
+}
+
+#gameContainer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+canvas {
+    display: block;
+}
+
+#hud {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+#score {
+    margin-bottom: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#highScore {
+    margin-bottom: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #ffd700;
+}
+
+#speed {
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background: rgba(0,0,0,0.8);
+    padding: 40px;
+    border-radius: 20px;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.overlay h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff4444;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+.overlay p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #cccccc;
+}
+
+.high-score-display {
+    color: #ffd700 !important;
+    font-size: 20px !important;
+    margin-top: 20px !important;
+}
+
+button {
+    margin: 10px;
+    padding: 15px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#startButton, #restartButton {
+    background: #ff4444;
+}
+
+#startButton:hover, #restartButton:hover {
+    background: #ff6666;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255,68,68,0.5);
+}
+
+#homeButton {
+    background: #4444ff;
+}
+
+#homeButton:hover {
+    background: #6666ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(68,68,255,0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
